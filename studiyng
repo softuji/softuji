@@ -1,0 +1,12 @@
+from time import sleep
+def timer(t:int):
+    while t:
+        mins, secs = divmod(t, 60)
+        tempo = '{:02d}:{:02d}'.format(mins,secs)
+        print(tempo, end="\r")
+        sleep(1)
+        t -=1
+    print('Tempo esgotado!')
+    
+t = int(input('Coloque o tempo em segundos: '))
+timer(t)
