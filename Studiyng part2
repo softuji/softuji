@@ -1,3 +1,5 @@
+//Trying out some string manipulations in Java.
+
 public class Main {
     public static void main(String[] args) {
     String phrase = "I hope I can master Java some day in the future.";
