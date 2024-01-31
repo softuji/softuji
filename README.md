@@ -1,12 +1,5 @@
 ### Hi there 👋 softuji trying some programs.
 
-About files:
-studiyng: exploring a countdown timer using Python.
-
-Studiyng part 2: trying out some string manipulations in Java.
-
-class_lab2 until 2.7: testing iterations within function and recursion in string processing. Plus, use new lambda function with reduce.
-
 <!--
 **softuji/softuji** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
