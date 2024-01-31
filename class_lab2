@@ -1,0 +1,18 @@
+#Function
+def function(letter:str, cont:int=0):
+    string = 'Espero tornar-me expert em Python.'
+    letter = letter.lower()
+    indices = []
+    
+    for i in range(len(string)):
+        if string[i].lower() == letter:
+            indices.append(i)
+            cont += 1
+            
+    if cont > 0 and indices:
+        print(f'Foi encontrado a letra ({letter}) {cont} vezes nos índices: {", ".join(map(str,indices))}.')
+    else:
+        print(f'Não foi encontrado a letra {letter}.')
+        
+b = str(input())
+function(b)
