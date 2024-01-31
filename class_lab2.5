@@ -1,0 +1,18 @@
+#Recursivity
+def sequence(string, letter, pos=0):
+    tam = len(string)
+    indices = []
+
+    if pos < tam:
+        if string[pos].lower() == letter.lower():
+            indices.append(pos)
+        indices += sequence(string, letter, pos+1)
+    
+    return indices
+
+let = str(input())
+index = sequence('Espero tornar-me expert em Python.', let)
+if index:
+    print(f'Encontrado a letra {let} nos índices: {", ".join(map(str, index))}.')
+else:
+    print(f'Não encontrado a letra {let}.')
