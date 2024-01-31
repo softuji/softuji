@@ -1,3 +1,5 @@
+#Exploring a countdown timer using Python.
+
 from time import sleep
 def timer(t:int):
     while t:
