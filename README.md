@@ -1,4 +1,4 @@
-### Hi there 👋 softuji trying some programs.
+### Hi there 👋 softuji trying out some programs.
 
 <!--
 **softuji/softuji** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
