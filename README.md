@@ -27,3 +27,13 @@ length(), indexOf(), e concatenação (+) são métodos da classe String.
 String phrase = "I hope I can master Java some day in the future."; declara uma variável phrase do tipo String.
 * Encapsulamento e Composição: O código encapsula funcionalidades relacionadas dentro de métodos e usa composição ao chamar esses métodos. Cada método 
 executa uma operação específica, promovendo uma abordagem modular.
+
+## Class 2_project1
+Uma versão recursiva do programa ainda se encaixa principalmente no paradigma imperativo.
+
+* Instruções Específicas: O código ainda usa instruções específicas para controlar o fluxo do programa, como condições (if-else) 
+e operações de lista (map, join). OBS.: # Uma forma de conversão de lista para string é usando a função map junto com join. A função map usa a função e aplica para iterável que pode ser lista, tupla, etc.
+* Mudança de Estado: A função sequence realiza mudanças de estado por meio de variáveis, como pos. As chamadas 
+recursivas e as manipulações de lista são usadas para acumular resultados.
+* Detalhes de Implementação: O código ainda descreve como realizar a tarefa (encontrar índices) em termos de iteração e condicionais,
+detalhando a implementação específica e de como obter o resultado desejado.
