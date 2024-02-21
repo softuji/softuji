@@ -44,3 +44,16 @@ Como você pode ser notado, a estrutura de código neste exemplo é mais concisa
 
 Ao contrário do exemplo de programação imperativa, não é necessário descrever os passos. Em vez de usar um loop para iterar toda a nossa lista, utiliza o sorted na lista indicada e faz a leitura com base no len.
 Em outras palavras, você pode ler o **código declarativo do Python** como encontrando a comprimento de todas as palvras da lista. Você só se importa com o resultado, não com o processo.
+
+## Class 2_project3
+A função reduce() é outra função nativa do python, ela vai aplicar uma função em todos os valores passados em forma de lista, e retornar apenas um valor.
+
+Curiosidade: reduce faz parte da lib functools, ou seja, precisa ser importada esta biblioteca antes de utilizá-la. 
+
+1. Utiliza List comprehension para simplificar a criação da lista letras.
+2. Modifiquei a função lambda para ter dois parâmetros (acc para acumulador e letra para a letra atual).
+Ele solicitará que você digite cinco letras, e então, combinará essas letras em uma palavra.
+
+No código há predominância de paradigma imperativo, uma vez que tem um loop for que itera sobre um intervalo, solicita entrada do usuário, 
+converte a entrada para minúsculas e a adiciona a uma lista. Em seguida, você utiliza a função reduce para 
+combinar as letras da lista em uma única palavra.
