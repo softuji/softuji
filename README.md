@@ -50,10 +50,18 @@ A função reduce() é outra função nativa do python, ela vai aplicar uma fun�
 
 Curiosidade: reduce faz parte da lib functools, ou seja, precisa ser importada esta biblioteca antes de utilizá-la. 
 
-1. Utiliza List comprehension para simplificar a criação da lista letras.
-2. Modifiquei a função lambda para ter dois parâmetros (acc para acumulador e letra para a letra atual).
+* Utiliza List comprehension para simplificar a criação da lista letras.
+* Modifiquei a função lambda para ter dois parâmetros (acc para acumulador e letra para a letra atual).
 Ele solicitará que você digite cinco letras, e então, combinará essas letras em uma palavra.
 
 No código há predominância de paradigma imperativo, uma vez que tem um loop for que itera sobre um intervalo, solicita entrada do usuário, 
 converte a entrada para minúsculas e a adiciona a uma lista. Em seguida, você utiliza a função reduce para 
 combinar as letras da lista em uma única palavra.
+
+## Class 3_project1
+O código em C define uma função Potencia que calcula a exponenciação de uma base (bas) elevada a um dado expoente (expo). 
+
+* A função principal chama-se Potencia(3, 3) e imprime o resultado com duas casas decimais.
+* A função Potencia recebe dois argumentos inteiros: bas (a base) e expo (o expoente).
+* Se o expoente é 0, a função retorna 1 (regra matemática).
+* Caso contrário, ele inicializa uma variável p para 1 e itera através de um loop while, multiplicando p pela base bas para cada iteração até que o expoente se torne 0.
