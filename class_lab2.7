@@ -1,5 +1,0 @@
-#Lambda with reduce
-from functools import reduce  
-letras = [str(input('Digite uma letra (máx. 5): ')).lower() for _ in range(5)]
-result = reduce(lambda acm, letra: acm + letra, letras)  #sintaxe reduce(função_aplicada, lista_de_elementos)
-print(result)
