@@ -37,3 +37,9 @@ e operações de lista (map, join). OBS.: # Uma forma de conversão de lista par
 recursivas e as manipulações de lista são usadas para acumular resultados.
 * Detalhes de Implementação: O código ainda descreve como realizar a tarefa (encontrar índices) em termos de iteração e condicionais,
 detalhando a implementação específica e de como obter o resultado desejado.
+
+## Class 2_project2
+Como você pode ser notado, a estrutura de código neste exemplo é mais concisa, legível e flexível. 
+* Por usar este tipo de função lambda (sintaxe: lambda argumentos: expressão) em apenas uma linha de código.
+Ao contrário do exemplo de programação imperativa, não é necessário descrever os passos. Em vez de usar um loop para iterar toda a nossa lista, utiliza o sorted na lista indicada e faz a leitura com base no len.
+Em outras palavras, você pode ler o **código declarativo do Python** como encontrando a comprimento de todas as palvras da lista. Você só se importa com o resultado, não com o processo.
