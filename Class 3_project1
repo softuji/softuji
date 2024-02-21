@@ -1,0 +1,16 @@
+#include <stdio.h>
+/*função para exponenciação*/
+double potencia(int bas, int expo);
+int main (void) {
+    printf("%.2f\n", potencia(3, 3));
+    return 0;
+}
+double potencia(int bas, int expo) {
+    if (expo == 0) return (1);
+    double p = 1;
+    while (expo >= 1) {
+        p *= bas;
+        expo --;
+    }
+    return (p);
+}
