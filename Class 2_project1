@@ -1,0 +1,19 @@
+#String Manipulation
+def sequence(string, char, pos=0):
+    tam = len(string)
+    indices = []
+
+    if pos < tam:
+        
+        if string[pos].lower() == char.lower():
+            indices.append(pos)
+        indices += sequence(string, char, pos+1)
+    
+    return indices
+
+charac = str(input())
+index = sequence('Espero tornar-me expert em Python.', charac)
+if index:
+    print(f'Encontrado a letra "{charac}" nos índices: {", ".join(map(str, index))}.')
+else:
+    print(f'Não encontrado a letra {charac}.')
