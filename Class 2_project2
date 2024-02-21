@@ -1,0 +1,4 @@
+# Trying something new
+lista = ['C', 'Java', 'Python', 'Rust']
+resultado = sorted(lista, key=lambda x: len(x))
+print(resultado)
