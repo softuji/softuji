@@ -5,15 +5,15 @@ def sequence(string, char, pos=0):
 
     if pos < tam:
         
-        if string[pos].lower() == char.lower():
+        if string[pos].lower() == char.lower(): #se a string na pos 0 for igual a letra correspondente: será adicionado na lista de indices
             indices.append(pos)
-        indices += sequence(string, char, pos+1)
+        indices += sequence(string, char, pos+1) #se não, acrescenta a mais na pos até encontrar a mesma letra
     
     return indices
 
 charac = str(input())
 index = sequence('Espero tornar-me expert em Python.', charac)
 if index:
-    print(f'Encontrado a letra "{charac}" nos índices: {", ".join(map(str, index))}.')
-else:
-    print(f'Não encontrado a letra {charac}.')
+    print(f'Encontrado a letra "{charac}" nos índices: {", ".join(map(str, index))}.') 
+else:                                                                                  
+    print(f'Não encontrado a letra {charac}.')  
