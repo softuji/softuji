@@ -1,0 +1,23 @@
+'''Aula 9 - Problemas em Paradigmas Funcionais: Geometria Computacional.
+Objetivo: A partir de um programa em Python criado para apresentar um gráfico de dados, 
+tente reescrevê-lo usando as diretivas da programação em paradigma funcional.
+Dica: não pense no gráfico, mas na manipulação dos dados.'''
+
+import matplotlib.pyplot as plt
+
+notas = [6.5, 7.2, 8.0, 5.5, 9.2, 6.0, 7.5]
+alunos = ['Ana', 'Carlos', 'Lorenzo', 'Junior', 'Lucas', 'Laura', 'Maria']
+
+def gerar_histograma(notas, alunos):
+    plt.barh(alunos, notas, color='purple', alpha=0.7, edgecolor='black')
+    plt.title('Gráfico Horizontal de Notas', fontsize=15)
+    plt.xlabel('Notas', fontsize=12)
+    plt.ylabel('Alunos', fontsize=12)
+    plt.tick_params(labelsize=12)
+    plt.tight_layout()  # Melhora a disposição dos elementos no gráfico
+    return plt.gca().get_children()[2].get_xy()
+
+dados_grafico = gerar_histograma(notas, alunos)
+plt.show()
+
+print(dados_grafico)
