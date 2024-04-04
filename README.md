@@ -1,5 +1,5 @@
 ### Projects in development for Programming Lab class.
-
+# Avaliação 1
 ## Class 1_project1
 O paradigma imperativo é o estilo de programação característico pelos programas com uma sequência de comandos que 
 modificam o estado presente programa. 
@@ -65,3 +65,48 @@ O código em C define uma função Potencia que calcula a exponenciação de uma
 * A função Potencia recebe dois argumentos inteiros: bas (a base) e expo (o expoente).
 * Se o expoente é 0, a função retorna 1 (regra matemática).
 * Caso contrário, ele inicializa uma variável p para 1 e itera através de um loop while, multiplicando p pela base bas para cada iteração até que o expoente se torne 0.
+
+# Avaliação 2
+## Class 4_project1
+Na iniciativa de explorar a geometria computacional, foi pesquisado em como criar imagens com bibliotecas do Python. Vale ressaltar, os canais de cores mencionados a seguir foram comentados nas aulas anteriores (o que ajudou no entendimento).
+
+Assim, foi possível contruir o código com os seguintes métodos aprendidos: 
+* Definição das dimensões da imagem: As dimensões da imagem são definidas como 300 pixels de largura por 200 pixels de altura, usando as variáveis width e height.
+
+* Criação de um array Numpy para representar a imagem: Um array Numpy tridimensional é criado com dimensões correspondentes à altura, largura e canais de cores (vermelho, verde e azul).
+ Este array é inicializado com zeros, representando a cor preta de fundo.
+
+* Preenchimento das áreas da imagem com cores específicas: Diferentes regiões da imagem são preenchidas com cores específicas, representadas por listas de valores de intensidade de cor. Isso é feito atribuindo valores de cor às fatias do array Numpy. As cores utilizadas são vermelho, verde, azul e roxo. As regiões preenchidas são especificadas através de índices de fatias no array Numpy.
+
+Referência: https://www.codespeedy.com/how-to-draw-shapes-in-matplotlib-with-python/
+## Class 6_project1
+Na tentativa de contruir uma lista duplamente encadeada, não teve êxito na elaboação pela falta de conhecimento profundo. Mas, o objetivo de escrever mesmo algo falho foi de fato válida a experiência.
+
+* A estrutura de dados de lista duplamente encadeada é definida, onde cada nó (Node) contém um dado e ponteiros para o próximo nó (prox) e o nó anterior (ant).
+
+* Implementação das operações de inserção foram implementadas para inserir elementos no início e no final da lista, respectivamente. Essas funções manipulam os ponteiros dos nós para garantir que a lista permaneça encadeada corretamente após a inserção.
+
+* Impressão dos valores na lista: Uma função (imprime) é definida para percorrer a lista e imprimir os valores armazenados em cada nó. Esta função é usada para verificar se os elementos foram corretamente inseridos na lista e para exibir a lista resultante após as operações de inserção.
+
+Referência: expicação do docente de Estrutura de Dados.
+
+## Class 7_project1
+Na busca por resoluções baseados em paradigmas funcionais, houve a utilização dos princípios do paradigma como funções puras, imutabilidade, recursão e as próprias funções.
+* A função chamada remove_vowels é definida para remover as vogais de uma string fornecida. Isso é feito utilizando a função filter em conjunto com uma expressão lambda que filtra os caracteres que não são vogais.
+
+* Aplicação da função de processamento é aplicada à string fornecida como entrada. Isso resulta em uma nova string contendo apenas as consoantes da string original.
+
+* Com a finalização da impressão do resultado, a nova string, contendo apenas as consoantes da string original, é impressa na tela usando a função print. Isso demonstra o processamento bem-sucedido da string original de acordo com o objetivo estabelecido.
+
+Referência: https://www.knowledgehut.com/tutorials/python-tutorial/python-functional-programming
+
+## Class 9_project1
+Com o objetivo de ter uma abordagem mais funcional, a escolha foi retornar os dados do gráfico (os valores das notas e dos alunos) em vez de plotá-lo diretamente.
+
+* O código cria um gráfico horizontal de barras usando plt.barh(), definindo as notas como largura e os alunos como as categorias. 
+* São configurados títulos e tamanhos de fonte, e o layout é ajustado com plt.tight_layout(). 
+* O método plt.gca().get_children()[2].get_xy() extrai as coordenadas x e y da terceira barra do gráfico. 
+Esses dados são retornados pela função gerar_histograma() para plotagem futura ou análise. O gráfico é exibido com plt.show(), e as coordenadas da barra são impressas.
+
+Referência: https://www.geeksforgeeks.org/matplotlib-tutorial/?ref=header_search
+
