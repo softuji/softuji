@@ -1,0 +1,71 @@
+/*Aula 6 - Estrutura de dados
+Objetivo: Lista duplamente encadeada com inserção*/
+//Obs: tentativa falha de inserção a mais dos elementos e exclusão dos mesmos
+
+#include <stdio.h>
+#include <stdlib.h>
+
+struct Node {
+    int dado;
+    struct Node *prox;
+    struct Node *ant;
+}; 
+typedef struct Node node;
+
+void insereInicio(int x, node **lista) {
+    node *nova = (node*) malloc(sizeof(node));
+    if (nova) {
+        nova->dado = x;
+        nova->prox = *lista;
+        nova->ant = NULL;
+        if (*lista != NULL)
+            (*lista)->ant = nova;
+        *lista = nova;
+    }
+}
+
+void insereFim(int x, node **lista) {
+    node *nova = (node*) malloc(sizeof(node));
+    if (nova) {
+        nova->dado = x;
+        nova->prox = NULL;
+        if (*lista == NULL) {
+            nova->ant = NULL;
+            *lista = nova;
+        } else {
+            node *temp = *lista;
+            while (temp->prox != NULL) {
+                temp = temp->prox;
+            }
+            temp->prox = nova;
+            nova->ant = temp;
+        }
+    }
+}
+
+void imprime(node* lista) {
+    printf("\nValores na lista:\n");
+    while (lista != NULL) {
+        printf("%d\n", lista->dado);
+        lista = lista->prox;
+    }
+    printf("\n");
+}
+
+int main() {
+    int d;
+    node *Lista = NULL;
+
+    printf("Entre com o dado (inicio):\n");
+    scanf("%d", &d);
+    insereInicio(d, &Lista);
+
+    printf("Entre com o dado (final):\n");
+    scanf("%d", &d);
+    insereFim(d, &Lista);
+
+    printf("Lista:\n");
+    imprime(Lista);
+
+    return 0;
+}
