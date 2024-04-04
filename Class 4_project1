@@ -1,0 +1,27 @@
+'''Aula 4 - Geometria computacional
+Objetivo: Desenhar figuras geométricas simples com Matplotlib e Numpy'''
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+#define as dimnesões das imagens (300 pixels de largura x 200 pixels de altura)
+width, height = 300, 200 
+
+#Numpy array com zeros = preenche o background com a cor preta
+images = np.zeros((height, width, 3), dtype=np.uint8) #dtype... indica que cada valor é representado por um byte sem sinal
+
+#definição das cores
+red = [255, 0, 0] #cada valor representa a intensidade do canal correspondente (vermelho, verde, azul) 
+green = [0, 255, 0]  
+blue = [0, 0, 255]
+purple = [128, 0, 128] #por isso roxo é a mistura de vermelho e azul
+
+#preenchimento das áreas das imagens com as cores
+images[50:100, 50:100] = red #altura x largura
+images[50:100, 150:200] = green 
+images[100:150, 100:180] = blue
+images[50:175, 200:250] = purple
+
+plt.imshow(images) 
+plt.axis() #remove com ('off') os eixos do gráfico
+plt.show() #exibe as imagens
