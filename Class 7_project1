@@ -1,0 +1,16 @@
+'''Aula 7 - Programação funcional
+Objetivo: exemplo para processamento de Strings em Python'''
+
+string = '''
+Laboratorio de programacao.
+Estrutura de dados.
+Orientada em objetos.
+Organizacao e Arquitetura.
+Calculo.
+'''
+
+def remove_vowels(s):
+    return ''.join(filter(lambda x: x not in ['a', 'e', 'i', 'o', 'u'], s))
+
+consonants = remove_vowels(string)
+print(consonants)
